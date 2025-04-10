@@ -1,0 +1,236 @@
+23:39:01.661 [main] INFO  bdd.RunnerAddGet - Ejecutando nuestra prueba de API casos ADD-GET RETO NTTDATA CFLORES
+23:39:02.129 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:39:03.224 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/801
+1 > Accept: application/json
+1 > 'Content-Type': application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:39:03.224 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Accept: application/json
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 150
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"id":"801","category":{"id":"801","name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":"801","name":"string"}],"status":"available"}
+
+23:39:04.084 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 200
+1 < Date: Thu, 10 Apr 2025 04:39:03 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":801,"category":{"id":801,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":801,"name":"string"}],"status":"available"}
+
+23:39:04.084 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 858
+1 < 200
+1 < Date: Thu, 10 Apr 2025 04:39:03 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":801,"category":{"id":801,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":801,"name":"string"}],"status":"available"}
+
+23:39:04.092 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 801,
+  "category": {
+    "id": 801,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 801,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
+ 
+23:39:04.092 [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "id": 801,
+  "category": {
+    "id": 801,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 801,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
+ 
+23:39:04.730 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:bdd/product/PetStoreAdd-Get.feature
+23:39:36.915 [main] INFO  bdd.RunnerPutGet - Ejecutando nuestra prueba de API casos PUT-GET RETO NTTDATA CFLORES
+23:39:37.370 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:39:37.373 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1744259977372
+23:39:38.449 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+1 > Accept: application/json
+1 > 'Content-Type': application/json
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:39:38.449 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet
+1 > Accept: application/json
+1 > 'Content-Type': application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 154
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.5)
+1 > Accept-Encoding: gzip,deflate
+{"id":2123,"category":{"id":2123,"name":"nombreCambio"},"name":"doggie","photoUrls":["string"],"tags":[{"id":2123,"name":"nombreCambio"}],"status":"sold"}
+
+23:39:38.989 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Date: Thu, 10 Apr 2025 04:39:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+[{"id":2123,"category":{"id":2123,"name":"nombreCambio"},"name":"doggie","photoUrls":["string"],"tags":[{"id":2123,"name":"nombreCambio"}],"status":"sold"},{"id":7574746,"category":{"id":1,"name":"Cat"},"name":"Hardy","photoUrls":["https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg"],"tags":[{"id":7805,"name":"Mainecoon"}],"status":"sold"},{"id":9223372036854738596,"category":{"id":2299282,"name":"officia d"},"name":"doggie","photoUrls":["veniam ad","consectetur laboris anim"],"tags":[{"id":6282852,"name":"aliqua deserunt irure do Excepteur"},{"id":-79344316,"name":"dolor veniam non Ut"}],"status":"sold"},{"id":111111,"category":{"id":11111,"name":"string"},"name":"puppy","photoUrls":["string"],"tags":[{"id":111,"name":"string"}],"status":"sold"}]
+
+23:39:38.989 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Date: Thu, 10 Apr 2025 04:39:38 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":2123,"category":{"id":2123,"name":"nombreCambio"},"name":"doggie","photoUrls":["string"],"tags":[{"id":2123,"name":"nombreCambio"}],"status":"sold"}
+
+23:39:38.996 [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 2123,
+  "category": {
+    "id": 2123,
+    "name": "nombreCambio"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 2123,
+      "name": "nombreCambio"
+    }
+  ],
+  "status": "sold"
+}
+ 
+23:39:38.996 [pool-1-thread-2] INFO  com.intuit.karate - [print] [
+  {
+    "id": 2123,
+    "category": {
+      "id": 2123,
+      "name": "nombreCambio"
+    },
+    "name": "doggie",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 2123,
+        "name": "nombreCambio"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 7574746,
+    "category": {
+      "id": 1,
+      "name": "Cat"
+    },
+    "name": "Hardy",
+    "photoUrls": [
+      "https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg"
+    ],
+    "tags": [
+      {
+        "id": 7805,
+        "name": "Mainecoon"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 9223372036854738596,
+    "category": {
+      "id": 2299282,
+      "name": "officia d"
+    },
+    "name": "doggie",
+    "photoUrls": [
+      "veniam ad",
+      "consectetur laboris anim"
+    ],
+    "tags": [
+      {
+        "id": 6282852,
+        "name": "aliqua deserunt irure do Excepteur"
+      },
+      {
+        "id": -79344316,
+        "name": "dolor veniam non Ut"
+      }
+    ],
+    "status": "sold"
+  },
+  {
+    "id": 111111,
+    "category": {
+      "id": 11111,
+      "name": "string"
+    },
+    "name": "puppy",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 111,
+        "name": "string"
+      }
+    ],
+    "status": "sold"
+  }
+]
+ 
+23:39:39.608 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:bdd/product/PetStorePut-Get.feature
